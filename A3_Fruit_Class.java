@@ -1,38 +1,47 @@
 /*
---------------------------------------  |
-Clifton McDonald                        |
-CUNY - Brooklyn College                 | 
-CISC. 3115-ERQ6                         |
-Assignmet 3 - Part 1 : "Fruit Class"    |    
---------------------------------------  |
+--------------------------------------  \
+Clifton McDonald                        /
+CUNY - Brooklyn College                 \ 
+CISC. 3115-ERQ6                         /
+Assignmet 3 - Part 1 : "Fruit Class"    \    
+--------------------------------------  /
 */
 
 class Fruit {
 
-    String name;
-    String taste; 
-    String size; 
+    //Attributes
+   protected String name = "";
+   protected String taste = ""; 
+   protected String size = ""; 
 
 
     static void eat(){
 
        //filler
-       System.out.println("Delecious!");
+       System.out.println("Delicious!");
         
     }
 }// Closes Fruit Class
 
-class Apple extends Fruit {
+    //Apple ext.
+    class Apple extends Fruit {
 
-    private String name = "Apple";
+         private String name = "Apple";
 
-    public static void main(String[] args){
+             public static void main(String[] args){
 
-        //filler
+            //filler
     
-    }
+            }
 
 
-} //Closes Apple ext. 
+    } //Closes Apple ext. 
 
+    //Orange ext. 
+    class Orange extends Fruit {
+
+        private String name = "Orange";
+
+        
+    }//Closes Orange ext. 
 
