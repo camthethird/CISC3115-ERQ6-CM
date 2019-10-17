@@ -7,31 +7,28 @@ Assignmet 3 - Part 1 : "Fruit Class"    \
 --------------------------------------  /
 */
 
-/*
---------------------------------------  \
-Clifton McDonald                        /
-CUNY - Brooklyn College                 \ 
-CISC. 3115-ERQ6                         /
-Assignmet 3 - Part 1 : "Fruit Class"    \    
---------------------------------------  /
-*/
+import java.util.*;
+import java.lang.*;
+import java.lang.Throwable;
 
-//import java.util.*;
 
 class Fruit {
 
     //Attributes
    protected String name = "fruit";
    protected String taste = "taste"; 
-   protected String size = "size"; 
+   protected double size = 0; 
+
 
     public void eat(){
-
             System.out.println("Fruit: " + name);
             System.out.println("Taste: " + taste);
-            System.out.println("You're eating an " + name + " that tastes " + taste + "."); 
+            System.out.println("Size: " + size);
+            System.out.println("You're eating an " + name + " that tastes " + taste + ".");
+             
      }
-     
+ 
+
 }// Closes Fruit Class
 
     //Apple ext.
@@ -40,7 +37,8 @@ class Fruit {
         public Apple(){
             name = "Apple";
             taste = "Sweet";
-            size = "big";
+            size = 2;
+
         }
 
     } //Closes Apple ext. 
@@ -52,7 +50,7 @@ class Fruit {
 
             name = "Orange";
             taste = "Tangy";
-            size = "small";
+            size = 1;
 
         }
 
@@ -62,13 +60,15 @@ class Fruit {
 
     //Main Class/ Fruit Driver
 public class Main {   
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IllegalArgumentException {
+        
         Apple redApple = new Apple();
         redApple.eat();
-      
-
+    
+        
         Orange jaffaOrange = new Orange();
         jaffaOrange.eat();
-      
+        
+    
     }
  } 
