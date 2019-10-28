@@ -17,11 +17,23 @@ import java.util.*;
 import java.lang.*;
 
 
-class ReadUp{ 
+class AW_C16Q1{ 
 
+    public static void readin(String input){
+
+        if(input.length() == 0){ return;} 
+            else { 
+                    System.out.println(input.charAt(0));
+                    readin(input.substring(1));
+                }
+    }//Closes readup method
+
+        public static void main(String[] args) {
+            
+            readin("Howdy, Partner!");
+
+        }// End Main. 
     
-
-
-}
+}/* End Class */ 
 
 
